@@ -1,89 +1,156 @@
-<?php
-defined('BASEPATH') OR exit('No direct script access allowed');
-?><!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<title>Welcome to CodeIgniter</title>
-
-	<style type="text/css">
-
-	::selection { background-color: #E13300; color: white; }
-	::-moz-selection { background-color: #E13300; color: white; }
-
-	body {
-		background-color: #fff;
-		margin: 40px;
-		font: 13px/20px normal Helvetica, Arial, sans-serif;
-		color: #4F5155;
-	}
-
-	a {
-		color: #003399;
-		background-color: transparent;
-		font-weight: normal;
-	}
-
-	h1 {
-		color: #444;
-		background-color: transparent;
-		border-bottom: 1px solid #D0D0D0;
-		font-size: 19px;
-		font-weight: normal;
-		margin: 0 0 14px 0;
-		padding: 14px 15px 10px 15px;
-	}
-
-	code {
-		font-family: Consolas, Monaco, Courier New, Courier, monospace;
-		font-size: 12px;
-		background-color: #f9f9f9;
-		border: 1px solid #D0D0D0;
-		color: #002166;
-		display: block;
-		margin: 14px 0 14px 0;
-		padding: 12px 10px 12px 10px;
-	}
-
-	#body {
-		margin: 0 15px 0 15px;
-	}
-
-	p.footer {
-		text-align: right;
-		font-size: 11px;
-		border-top: 1px solid #D0D0D0;
-		line-height: 32px;
-		padding: 0 10px 0 10px;
-		margin: 20px 0 0 0;
-	}
-
-	#container {
-		margin: 10px;
-		border: 1px solid #D0D0D0;
-		box-shadow: 0 0 8px #D0D0D0;
-	}
-	</style>
-</head>
-<body>
-
-<div id="container">
-	<h1>Welcome to CodeIgniter!</h1>
-
-	<div id="body">
-		<p>The page you are looking at is being generated dynamically by CodeIgniter.</p>
-
-		<p>If you would like to edit this page you'll find it located at:</p>
-		<code>application/views/welcome_message.php</code>
-
-		<p>The corresponding controller for this page is found at:</p>
-		<code>application/controllers/Welcome.php</code>
-
-		<p>If you are exploring CodeIgniter for the very first time, you should start by reading the <a href="user_guide/">User Guide</a>.</p>
+<!-- Masthead-->
+<header class="masthead">
+	<div class="container h-100">
+		<div class="row h-100 align-items-center justify-content-center text-center">
+			<div class="col-lg-10 align-self-end">
+				<h1 class="text-uppercase text-white font-weight-bold">Your Favorite Source of Free Bootstrap Themes</h1>
+				<hr class="divider my-4" />
+			</div>
+			<div class="col-lg-8 align-self-baseline">
+				<p class="text-white-75 font-weight-light mb-5">Start Bootstrap can help you build better websites using the Bootstrap framework! Just download a theme and start customizing, no strings attached!</p>
+				<a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
+			</div>
+		</div>
 	</div>
-
-	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></p>
+</header>
+<!-- About-->
+<section class="page-section bg-primary" id="about">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-8 text-center">
+				<h2 class="text-white mt-0">We've got what you need!</h2>
+				<hr class="divider light my-4" />
+				<p class="text-white-50 mb-4">Start Bootstrap has everything you need to get your new website up and running in no time! Choose one of our open source, free to download, and easy to use themes! No strings attached!</p>
+				<a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Get Started!</a>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Services-->
+<section class="page-section" id="services">
+	<div class="container">
+		<h2 class="text-center mt-0">At Your Service</h2>
+		<hr class="divider my-4" />
+		<div class="row">
+			<div class="col-lg-3 col-md-6 text-center">
+				<div class="mt-5">
+					<i class="fas fa-4x fa-gem text-primary mb-4"></i>
+					<h3 class="h4 mb-2">Sturdy Themes</h3>
+					<p class="text-muted mb-0">Our themes are updated regularly to keep them bug free!</p>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 text-center">
+				<div class="mt-5">
+					<i class="fas fa-4x fa-laptop-code text-primary mb-4"></i>
+					<h3 class="h4 mb-2">Up to Date</h3>
+					<p class="text-muted mb-0">All dependencies are kept current to keep things fresh.</p>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 text-center">
+				<div class="mt-5">
+					<i class="fas fa-4x fa-globe text-primary mb-4"></i>
+					<h3 class="h4 mb-2">Ready to Publish</h3>
+					<p class="text-muted mb-0">You can use this design as is, or you can make changes!</p>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 text-center">
+				<div class="mt-5">
+					<i class="fas fa-4x fa-heart text-primary mb-4"></i>
+					<h3 class="h4 mb-2">Made with Love</h3>
+					<p class="text-muted mb-0">Is it really open source if it's not made with love?</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Portfolio-->
+<div id="portfolio">
+	<div class="container-fluid p-0">
+		<div class="row no-gutters">
+			<div class="col-lg-4 col-sm-6">
+				<a class="portfolio-box" href="<?php echo base_url();?>template/assets/img/portfolio/fullsize/1.jpg">
+					<img class="img-fluid" src="<?php echo base_url();?>template/assets/img/portfolio/thumbnails/1.jpg" alt="" />
+					<div class="portfolio-box-caption">
+						<div class="project-category text-white-50">Category</div>
+						<div class="project-name">Project Name</div>
+					</div>
+				</a>
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<a class="portfolio-box" href="<?php echo base_url();?>template/assets/img/portfolio/fullsize/2.jpg">
+					<img class="img-fluid" src="<?php echo base_url();?>template/assets/img/portfolio/thumbnails/2.jpg" alt="" />
+					<div class="portfolio-box-caption">
+						<div class="project-category text-white-50">Category</div>
+						<div class="project-name">Project Name</div>
+					</div>
+				</a>
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<a class="portfolio-box" href="<?php echo base_url();?>template/assets/img/portfolio/fullsize/3.jpg">
+					<img class="img-fluid" src="<?php echo base_url();?>template/assets/img/portfolio/thumbnails/3.jpg" alt="" />
+					<div class="portfolio-box-caption">
+						<div class="project-category text-white-50">Category</div>
+						<div class="project-name">Project Name</div>
+					</div>
+				</a>
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<a class="portfolio-box" href="<?php echo base_url();?>template/assets/img/portfolio/fullsize/4.jpg">
+					<img class="img-fluid" src="<?php echo base_url();?>template/assets/img/portfolio/thumbnails/4.jpg" alt="" />
+					<div class="portfolio-box-caption">
+						<div class="project-category text-white-50">Category</div>
+						<div class="project-name">Project Name</div>
+					</div>
+				</a>
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<a class="portfolio-box" href="<?php echo base_url();?>template/assets/img/portfolio/fullsize/5.jpg">
+					<img class="img-fluid" src="<?php echo base_url();?>template/assets/img/portfolio/thumbnails/5.jpg" alt="" />
+					<div class="portfolio-box-caption">
+						<div class="project-category text-white-50">Category</div>
+						<div class="project-name">Project Name</div>
+					</div>
+				</a>
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<a class="portfolio-box" href="<?php echo base_url();?>template/assets/img/portfolio/fullsize/6.jpg">
+					<img class="img-fluid" src="<?php echo base_url();?>template/assets/img/portfolio/thumbnails/6.jpg" alt="" />
+					<div class="portfolio-box-caption p-3">
+						<div class="project-category text-white-50">Category</div>
+						<div class="project-name">Project Name</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
 </div>
-
-</body>
-</html>
+<!-- Call to action-->
+<section class="page-section bg-dark text-white">
+	<div class="container text-center">
+		<h2 class="mb-4">Free Download at Start Bootstrap!</h2>
+		<a class="btn btn-light btn-xl" href="https://startbootstrap.com/themes/creative/">Download Now!</a>
+	</div>
+</section>
+<!-- Contact-->
+<section class="page-section" id="contact">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-8 text-center">
+				<h2 class="mt-0">Let's Get In Touch!</h2>
+				<hr class="divider my-4" />
+				<p class="text-muted mb-5">Ready to start your next project with us? Give us a call or send us an email and we will get back to you as soon as possible!</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
+				<i class="fas fa-phone fa-3x mb-3 text-muted"></i>
+				<div>+1 (555) 123-4567</div>
+			</div>
+			<div class="col-lg-4 mr-auto text-center">
+				<i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
+				<!-- Make sure to change the email address in BOTH the anchor text and the link target below!-->
+				<a class="d-block" href="mailto:contact@yourwebsite.com">contact@yourwebsite.com</a>
+			</div>
+		</div>
+	</div>
+</section>
